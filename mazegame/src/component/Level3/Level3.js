@@ -149,7 +149,7 @@ function Level3() {
   return (
     <div className="body">
       <div className="rules">
-        <h1>Level 3: The Easy Round </h1>
+        <h1>Level 3: The Difficult Round </h1>
 
         <div id="maze-container">
           <img
