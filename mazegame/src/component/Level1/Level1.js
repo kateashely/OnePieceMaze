@@ -197,12 +197,12 @@ function Level1() {
             <div className="cell"></div>
           </div>
         </div>
+        </div>
 
       <div className="back-btn">
         <a href="/" className="button2">
           Back to Main Page
         </a>
-      </div>
       </div>
     </div>
   );
