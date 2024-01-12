@@ -17,7 +17,7 @@ if (url === "http://localhost:3000/Level1") {
   ];
   let mazearray = level1;
 
-  function getratposition(x, y) {
+  function getratposition() {
     let position = [0, 0];
     for (let i = 0; i < 8; i++) {
       for (let j = 0; j < 8; j++) {
