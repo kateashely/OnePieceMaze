@@ -94,6 +94,7 @@ if (url === "http://localhost:3000/Level2") {
 
     if (ratleft === foodleft && rattop === foodtop) {
       alert("You Won!");
+      window.location.replace("/Level3");
     }
   });
 }
