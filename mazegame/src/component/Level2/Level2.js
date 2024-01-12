@@ -24,7 +24,7 @@ if (url === "http://localhost:3000/Level2") {
 
   let mazearray = level2;
 
-  function getratposition1(x, y) {
+  function getratposition1() {
     let position = [0, 0];
     for (let i = 0; i < 16; i++) {
       for (let j = 0; j < 16; j++) {
@@ -49,7 +49,7 @@ if (url === "http://localhost:3000/Level2") {
 
     if (
       e.key === "ArrowRight" &&
-      ratleft < (mazearray.length - 1) * 50 &&
+      ratleft < (mazearray.length - 1) * 25 &&
       mazearray[ratposition[0]][ratposition[1] + 1] === 1
     ) {
       ratleft += 25;
@@ -82,7 +82,7 @@ if (url === "http://localhost:3000/Level2") {
 
     if (
       e.key === "ArrowDown" &&
-      rattop < (mazearray.length - 1) * 50 &&
+      rattop < (mazearray.length - 1) * 25 &&
       mazearray[ratposition[0] + 1][ratposition[1]] === 1
     ) {
       rattop += 25;
