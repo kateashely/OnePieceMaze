@@ -72,10 +72,10 @@ if (url === "http://localhost:3000/Level3") {
 
   let mazearray = level3;
 
-  function getratposition(x, y) {
+  function getratposition() {
     let position = [0, 0];
-    for (let i = 0; i < 8; i++) {
-      for (let j = 0; j < 8; j++) {
+    for (let i = 0; i < 32; i++) {
+      for (let j = 0; j < 32; j++) {
         if (mazearray[i][j] === 2) {
           position[0] = i;
           position[1] = j;
@@ -97,10 +97,10 @@ if (url === "http://localhost:3000/Level3") {
 
     if (
       e.key === "ArrowRight" &&
-      ratleft < (mazearray.length - 1) * 50 &&
+      ratleft < (mazearray.length - 1) * 100 &&
       mazearray[ratposition[0]][ratposition[1] + 1] === 1
     ) {
-      ratleft += 50;
+      ratleft += 100;
       rat.style.left = ratleft + "px";
       mazearray[ratposition[0]][ratposition[1]] = 1;
       mazearray[ratposition[0]][ratposition[1] + 1] = 2;
@@ -111,7 +111,7 @@ if (url === "http://localhost:3000/Level3") {
       ratleft > 0 &&
       mazearray[ratposition[0]][ratposition[1] - 1] === 1
     ) {
-      ratleft -= 50;
+      ratleft -= 100;
       rat.style.left = ratleft + "px";
       mazearray[ratposition[0]][ratposition[1]] = 1;
       mazearray[ratposition[0]][ratposition[1] - 1] = 2;
@@ -130,10 +130,10 @@ if (url === "http://localhost:3000/Level3") {
 
     if (
       e.key === "ArrowDown" &&
-      rattop < (mazearray.length - 1) * 50 &&
+      rattop < (mazearray.length - 1) * 100 &&
       mazearray[ratposition[0] + 1][ratposition[1]] === 1
     ) {
-      rattop += 50;
+      rattop += 100;
       rat.style.top = rattop + "px";
 
       mazearray[ratposition[0]][ratposition[1]] = 1;
@@ -141,7 +141,7 @@ if (url === "http://localhost:3000/Level3") {
     }
 
     if (ratleft === foodleft && rattop === foodtop) {
-      alert("You Won!");
+      alert("Congrats! You've found the one piece!");
     }
   });
 }
@@ -157,11 +157,11 @@ function Level3() {
             id="rat"
             width="50px"
             height="50px"
-            alt="rat"
+            alt="hat"
           ></img>
           <img
             src="chest.png"
-            alt="rat"
+            alt="chest"
             width="50px"
             height="50px"
             id="food"
