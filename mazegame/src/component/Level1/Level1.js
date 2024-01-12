@@ -106,11 +106,11 @@ function Level1() {
             style={{}}
             width="50px"
             height="50px"
-            alt="rat"
+            alt="hat"
           ></img>
           <img
             src="./src/chest.png"
-            alt="food"
+            alt="chest"
             width="50px"
             height="50px"
             id="food"
