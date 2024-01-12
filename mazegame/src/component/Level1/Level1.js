@@ -198,46 +198,11 @@ function Level1() {
           </div>
         </div>
 
-        {/* <div id="maze-container">
-        <img src="./hat.png" id="rat" width="50px" height="50px" alt="rat"></img>
-        <img src="./chest.png" id="food" alt="food" width="50px" height="50px"></img>
-        <div className="row">
-        <div className="cell"></div>
-        <div className="wall"></div>
-        <div className="wall"></div>
-        <div className="wall"></div>
-        <div className="wall"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        </div>
-        <div className="row">
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="wall"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="wall"></div>
-        <div className="wall"></div>
-        </div>
-        <div className="row">
-        <div className="wall"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="wall"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        </div>
-    </div> */}
-      </div>
-
       <div className="back-btn">
         <a href="/" className="button2">
           Back to Main Page
         </a>
+      </div>
       </div>
     </div>
   );
